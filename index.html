@@ -8,55 +8,77 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="nav">
-  <a href="#top" class="logo">TH</a>
-  <nav>
-    <a href="#work">Work</a><a href="#games">Games</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-  </nav>
+<div class="hud"><span>LEVEL PROGRESS</span><div class="bar"><i id="prog"></i></div></div>
+<div id="toast" role="status"></div>
+
+<header class="hero" id="top">
+  <h1 id="name" aria-label="Md. Tawhidul Hoque"></h1>
+  <p class="role">- <span id="role"></span><b class="cur">_</b> -</p>
+  <pre class="boot" id="boot" aria-hidden="true"></pre>
+  <div class="cta">
+    <a class="btn red" href="https://ballsy-brit.itch.io/ouroboros-game" target="_blank" rel="noopener">Play Ouroboros</a>
+    <a class="btn" href="https://studio.agni.com" target="_blank" rel="noopener">Studio Agni</a>
+    <a class="btn" href="https://github.com/Ballsy-Brit/Public-Version-Project-Ouroboros" target="_blank" rel="noopener">Project repo</a>
+  </div>
+  <div class="chips" id="chips"></div>
 </header>
 
-<main id="top">
-<section class="hero">
-  <p class="tag">Game Developer at Agni Game Studio</p>
-  <h1>Md. Tawhidul<br>Hoque</h1>
-  <p class="lead">I build the systems, AI, visuals and sound that make games feel alive. Horror, top-down action, survival: whatever the game needs.</p>
-  <div class="cta">
-    <a class="btn red" href="#work">Watch my work</a>
-    <a class="btn" href="https://store.steampowered.com/app/5069350/Rusty_Rampage/" target="_blank" rel="noopener">Rusty Rampage on Steam</a>
+<main>
+<section data-title="01 PLAYER_PROFILE" data-ach="Profile loaded">
+  <h2></h2>
+  <div class="two">
+    <div class="panel">
+      <pre class="sheet">PLAYER : Md. Tawhidul Hoque
+CLASS  : Game Developer
+GUILD  : Agni Game Studio
+ROLE   : Full-time since Oct 2025
+QUESTS : Horror, Top-down action,
+         Survival horror
+STATUS : Active</pre>
+      <p class="type" data-text="C:\AGNI> type about.txt&#10;Game developer at Agni Game Studio. I build gameplay systems, enemy AI, shaders, VFX, audio and levels across horror, action and survival games."></p>
+    </div>
+    <div class="panel">
+      <h3>Specializations</h3>
+      <ul class="list" id="specs"></ul>
+    </div>
   </div>
 </section>
 
-<section id="work">
-  <h2>Showcase</h2>
+<section data-title="02 SHOWCASE_REEL" data-ach="Reel unlocked">
+  <h2></h2>
   <p class="sub">Hover a clip to preview it. Click to open on YouTube.</p>
   <div class="grid" id="reel"></div>
-  <p class="more"><a href="https://www.youtube.com/@Mr-Ballsy-Brit" target="_blank" rel="noopener">See every devlog on YouTube</a></p>
+  <p class="more"><a href="https://www.youtube.com/@Mr-Ballsy-Brit" target="_blank" rel="noopener">[ + ] Load more devlogs on YouTube</a></p>
 </section>
 
-<section id="games">
-  <h2>Games</h2>
-  <div class="grid games" id="gamelist"></div>
+<section data-title="03 QUESTS" data-ach="Quest log opened">
+  <h2></h2>
+  <div class="grid" id="gamelist"></div>
 </section>
 
-<section id="skills">
-  <h2>What I do</h2>
-  <div class="grid skills" id="skilllist"></div>
-  <p class="tools"><b>Tools:</b> Unity, Unreal Engine, C#, C++, Blender, Substance Designer, Substance Painter, FMOD, Python, JavaScript</p>
+<section data-title="04 ABILITIES" data-ach="Abilities learned">
+  <h2></h2>
+  <div class="grid" id="abilities"></div>
 </section>
 
-<section id="contact">
-  <h2>Let's talk</h2>
-  <p class="sub">Open to collaborations and game jams.</p>
+<section data-title="05 INVENTORY" data-ach="Inventory equipped">
+  <h2></h2>
+  <div class="grid" id="inventory"></div>
+</section>
+
+<section data-title="06 JOIN_MY_PARTY" data-ach="Party invite sent">
+  <h2></h2>
   <div class="cta">
     <a class="btn red" href="mailto:tawhidwasee2023@gmail.com">tawhidwasee2023@gmail.com</a>
     <a class="btn" href="https://www.linkedin.com/in/md-tawhidul-hoque-8787b5201" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="https://ballsy-brit.itch.io/" target="_blank" rel="noopener">itch.io</a>
     <a class="btn" href="https://youtube.com/@ballsybrit" target="_blank" rel="noopener">YouTube</a>
-    <a class="btn" href="https://github.com/Ballsy-Brit" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://ballsy-brit.itch.io/" target="_blank" rel="noopener">itch.io</a>
+    <a class="btn" href="https://discord.com/users/744272463847751743" target="_blank" rel="noopener">Discord: ballsybrit</a>
   </div>
+  <p class="quote type" data-text="One more bug fix usually means three additional hours of suffering."></p>
 </section>
 </main>
-<footer>© <span id="yr"></span> Md. Tawhidul Hoque</footer>
+<footer>INSERT COIN TO CONTINUE<span class="cur">_</span></footer>
 <script src="script.js"></script>
 </body>
 </html>
