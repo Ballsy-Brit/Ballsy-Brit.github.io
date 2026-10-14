@@ -123,3 +123,11 @@ document.querySelectorAll("section").forEach(s => io.observe(s));
   }
 })();
 $("yr") && ($("yr").textContent = new Date().getFullYear());
+
+// Avatar: uses avatar.jpg / .png / .webp if you add one next to index.html, else the silhouette
+(() => {
+  const srcs = ["avatar.jpg", "avatar.png", "avatar.webp"]; let i = 0; const img = $("photo");
+  img.onload = () => { img.hidden = false; $("sil").style.display = "none"; };
+  img.onerror = () => { if (++i < srcs.length) img.src = srcs[i]; };
+  img.src = srcs[0];
+})();
