@@ -56,3 +56,9 @@ h3{color:var(--red);margin-bottom:8px}
 .quote{margin-top:30px;color:var(--red);min-height:3em}
 footer{text-align:center;padding:40px;color:var(--red);border-top:3px solid var(--red);letter-spacing:.2em}
 @media(prefers-reduced-motion:reduce){.cur{animation:none}#toast{transition:none}html{scroll-behavior:auto}}
+
+/* Background watermark: fixed, behind everything, never blocks clicks */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+background:url("frame.webp") center bottom/cover no-repeat;opacity:.4}
+@media(max-width:1500px){body::before{opacity:.18}}
+@media(max-width:800px){body::before{opacity:.1}}
