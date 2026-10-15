@@ -72,3 +72,8 @@ background:url("frame.webp") center bottom/cover no-repeat;opacity:.4}
 .avatar::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
 .avatar figcaption{position:absolute;left:0;bottom:0;z-index:1;background:#000;color:var(--red);font-size:.72rem;padding:2px 10px;letter-spacing:.15em}
 @media(max-width:800px){.hero-row{grid-template-columns:1fr}.avatar{margin:auto;order:-1;width:200px}}
+
+/* Default avatar image; your own photo (avatar.jpg/png/webp) replaces it */
+.avatar{background:#1b1b1b}
+.avatar.photo{background:var(--red)}
+.avatar img#sil{filter:none;mix-blend-mode:normal;object-fit:contain;padding:12px 8px 0}
