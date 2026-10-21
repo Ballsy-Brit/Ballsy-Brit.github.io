@@ -17,13 +17,15 @@ const reel = [ // id = part after v= or youtu.be/
   {id:"CNe7auWREJg", title:"Enemy AI", note:"Reactive enemy behavior"},
   {id:"TKDc0czBzjk", title:"Room Variant Controller", note:"Room variation system"},
   {id:"IK6MtoZt9go", title:"Look Trigger System", note:"Events driven by player gaze"},
-  {id:"1xmeOEdt6fU", title:"Reactive Water Shader", note:"Water that reacts to the player"}
+  {id:"1xmeOEdt6fU", title:"Reactive Water Shader", note:"Water that reacts to the player"},
+  {id:"8mMF5NCAXiw", title:"Devlog 5", note:"Latest devlog"},
+  {id:"toMOigFwf_4", title:"Devlog 6", note:"Latest devlog"}
 ];
 const games = [
   {name:"Rusty Rampage", status:"RELEASED", text:"Agni Studio's in-house game on Steam.", link:"https://store.steampowered.com/app/5069350/Rusty_Rampage/", label:"View on Steam"},
   {name:"Project Ouroboros", status:"IN PROGRESS", text:"Psychological horror with modular systems and reactive AI.", link:"https://ballsy-brit.itch.io/ouroboros-game", label:"Play on itch.io"},
   {name:"Top-down action game", status:"IN PROGRESS", text:"Details coming soon."},
-  {name:"Survival horror game", status:"IN PROGRESS", text:"Details coming soon."}
+  {name:"Projekt Upior", status:"IN PROGRESS", text:"Survival horror game based on true events."}
 ];
 const abilities = [
   ["Gameplay design","Mechanics, game feel, progression"],
